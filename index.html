@@ -15,37 +15,43 @@
       }
       .tab .tab-bar {
         display: flex;
-        margin: 3px 8px;
         border-bottom: 1px solid blue;
       }
-      .tab .tab-bar .li.active {
+      .tab .tab-bar li {
+        margin: 3px 20px 0 0;
+        width: 30px;
+        text-align: center;
+      }
+      .tab .tab-bar li.active {
         border: 1px solid blue;
         border-bottom: none;
       }
-      .tab .tab-content {
+      .tab .tab-content li {
+        display: none;
+      }
+      .tab .tab-content li.active {
+        display: block;
       }
     </style>
   </head>
   <body>
     <div class="tab">
-      <div class="tab-bar">
-        <ul>
-          <li>
-            1
-          </li>
-          <li>
-            2
-          </li>
-          <li>
-            3
-          </li>
-        </ul>
-        <ul class="bar-content">
-          <li>content1</li>
-          <li>content2</li>
-          <li>content3</li>
-        </ul>
-      </div>
+      <ul class="tab-bar">
+        <li>
+          1
+        </li>
+        <li>
+          2
+        </li>
+        <li>
+          3
+        </li>
+      </ul>
+      <ul class="tab-content">
+        <li>content1</li>
+        <li>content2</li>
+        <li>content3</li>
+      </ul>
     </div>
   </body>
   <script>
